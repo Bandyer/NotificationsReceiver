@@ -28,6 +28,7 @@
 		A9407A4025121E1D001F4DEE /* TokenExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenExtensions.swift; sourceTree = "<group>"; };
 		A9407A4225121FCD001F4DEE /* PushService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushService.swift; sourceTree = "<group>"; };
 		A9407A442512205D001F4DEE /* VoIPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoIPService.swift; sourceTree = "<group>"; };
+		A9407A46251226FB001F4DEE /* NotificationsReceiver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationsReceiver.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		A9407A1F25120AC8001F4DEE /* NotificationsReceiver */ = {
 			isa = PBXGroup;
 			children = (
+				A9407A46251226FB001F4DEE /* NotificationsReceiver.entitlements */,
 				A9407A2025120AC8001F4DEE /* AppDelegate.swift */,
 				A9407A2425120AC8001F4DEE /* ViewController.swift */,
 				A9407A2625120AC8001F4DEE /* Main.storyboard */,
@@ -292,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NotificationsReceiver/NotificationsReceiver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NotificationsReceiver/Info.plist;
@@ -311,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NotificationsReceiver/NotificationsReceiver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NotificationsReceiver/Info.plist;
