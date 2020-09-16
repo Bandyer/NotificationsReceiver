@@ -16,30 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="VoIP Token:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjk-Wf-3bx">
-                                <rect key="frame" x="14" y="179" width="93" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Token:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjk-Wf-3bx">
+                                <rect key="frame" x="14" y="112.5" width="45.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Push Token:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-r4-VZv">
-                                <rect key="frame" x="14" y="443" width="93" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Token:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-r4-VZv">
+                                <rect key="frame" x="14" y="223" width="45.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e8Y-1W-ha7">
-                                <rect key="frame" x="127" y="64" width="273" height="250"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" text="N/A" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e8Y-1W-ha7">
+                                <rect key="frame" x="79.5" y="105" width="320.5" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uxk-HJ-ptw">
-                                <rect key="frame" x="127" y="328" width="273" height="250"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VoIP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYV-Qt-cP1">
+                                <rect key="frame" x="189.5" y="64" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUT-PR-XCF">
+                                <rect key="frame" x="187.5" y="158" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auth:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXG-EB-GcX">
+                                <rect key="frame" x="14" y="198.5" width="37" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N/A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdH-nR-LQH">
+                                <rect key="frame" x="79.5" y="199" width="24" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" text="N/A" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uxk-HJ-ptw">
+                                <rect key="frame" x="79.5" y="215.5" width="320.5" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -47,24 +69,33 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="uxk-HJ-ptw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sgL-r4-VZv" secondAttribute="trailing" constant="20" id="0gH-B3-HhA"/>
-                            <constraint firstItem="e8Y-1W-ha7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="3py-yW-Cim"/>
+                            <constraint firstItem="uxk-HJ-ptw" firstAttribute="leading" secondItem="sgL-r4-VZv" secondAttribute="trailing" constant="20" id="0gH-B3-HhA"/>
+                            <constraint firstItem="e8Y-1W-ha7" firstAttribute="top" secondItem="vYV-Qt-cP1" secondAttribute="bottom" constant="20" id="3py-yW-Cim"/>
                             <constraint firstItem="sgL-r4-VZv" firstAttribute="trailing" secondItem="Sjk-Wf-3bx" secondAttribute="trailing" id="8uw-4G-9Z7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e8Y-1W-ha7" secondAttribute="trailing" constant="14" id="9l0-hm-ymx"/>
-                            <constraint firstItem="e8Y-1W-ha7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Sjk-Wf-3bx" secondAttribute="trailing" constant="20" id="AfU-Cy-o1s"/>
+                            <constraint firstItem="e8Y-1W-ha7" firstAttribute="leading" secondItem="Sjk-Wf-3bx" secondAttribute="trailing" constant="20" id="AfU-Cy-o1s"/>
+                            <constraint firstItem="MXG-EB-GcX" firstAttribute="centerY" secondItem="gdH-nR-LQH" secondAttribute="centerY" id="Aka-Aj-tfK"/>
                             <constraint firstItem="Sjk-Wf-3bx" firstAttribute="centerY" secondItem="e8Y-1W-ha7" secondAttribute="centerY" id="IDH-rX-e8x"/>
+                            <constraint firstItem="LUT-PR-XCF" firstAttribute="top" secondItem="e8Y-1W-ha7" secondAttribute="bottom" constant="20" id="NjR-f4-6Ga"/>
+                            <constraint firstItem="MXG-EB-GcX" firstAttribute="leading" secondItem="sgL-r4-VZv" secondAttribute="leading" id="PoW-oC-PA7"/>
                             <constraint firstItem="sgL-r4-VZv" firstAttribute="leading" secondItem="Sjk-Wf-3bx" secondAttribute="leading" id="Pud-1Y-WLN"/>
                             <constraint firstItem="Sjk-Wf-3bx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="SgA-6g-2Dp"/>
+                            <constraint firstItem="gdH-nR-LQH" firstAttribute="leading" secondItem="uxk-HJ-ptw" secondAttribute="leading" id="T9o-PE-Xth"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uxk-HJ-ptw" secondAttribute="trailing" constant="14" id="U3i-GY-Vng"/>
                             <constraint firstItem="sgL-r4-VZv" firstAttribute="centerY" secondItem="uxk-HJ-ptw" secondAttribute="centerY" id="Uj2-OE-2CO"/>
-                            <constraint firstItem="uxk-HJ-ptw" firstAttribute="top" secondItem="e8Y-1W-ha7" secondAttribute="bottom" constant="14" id="cWU-lv-6d0"/>
+                            <constraint firstItem="vYV-Qt-cP1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bzS-bZ-RjH"/>
+                            <constraint firstItem="uxk-HJ-ptw" firstAttribute="top" secondItem="gdH-nR-LQH" secondAttribute="bottom" constant="-0.5" id="cWU-lv-6d0"/>
+                            <constraint firstItem="gdH-nR-LQH" firstAttribute="top" secondItem="LUT-PR-XCF" secondAttribute="bottom" constant="20" id="cwd-8e-BnL"/>
+                            <constraint firstItem="LUT-PR-XCF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dk9-28-aYd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gdH-nR-LQH" secondAttribute="trailing" constant="20" id="nan-oF-zVK"/>
+                            <constraint firstItem="gdH-nR-LQH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MXG-EB-GcX" secondAttribute="trailing" constant="10" id="o0m-Ai-Rgs"/>
+                            <constraint firstItem="vYV-Qt-cP1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zRX-a9-4pm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="pushLabel" destination="sgL-r4-VZv" id="5Mo-Ri-Gmz"/>
+                        <outlet property="pushAuthLabel" destination="gdH-nR-LQH" id="DUD-6I-IYx"/>
                         <outlet property="pushTextView" destination="uxk-HJ-ptw" id="pvP-J6-wXU"/>
-                        <outlet property="voipLabel" destination="Sjk-Wf-3bx" id="lfU-qw-xKB"/>
                         <outlet property="voipTextView" destination="e8Y-1W-ha7" id="v3m-He-MKb"/>
                     </connections>
                 </viewController>
