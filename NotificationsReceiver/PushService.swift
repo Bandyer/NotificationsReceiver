@@ -9,28 +9,35 @@ import UIKit
 class PushService {
 
     static let shared = PushService()
-    private(set) var token: Data?
+
+    var token: Data? {
+        UserDefaults.standard.value(forKey: "push_token") as? Data
+    }
+    
     private let center: UNUserNotificationCenter = UNUserNotificationCenter.current()
 
-    private init() {
-        
-    }
+    var onTokenUpdate: ((Data?) -> Void)?
+    var onAuthorizationStatusUpdate: (() -> Void)?
 
-    func authorizationStatus(completion: @escaping (UNAuthorizationStatus) -> Void) {
+    private init() {}
+
+    func getAuthorizationStatus(completion: @escaping (UNAuthorizationStatus) -> Void) {
         center.getNotificationSettings { settings in
             completion(settings.authorizationStatus)
         }
     }
 
     func registerForNotifications() {
-        authorizationStatus { [weak self] (status) in
+        getAuthorizationStatus { [weak self] (status) in
             guard let self = self else { return }
             
             if status == .notDetermined {
                 self.center.requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
                     if success {
-                        DispatchQueue.main.async {
+                        DispatchQueue.main.async { [weak self] in
+                            guard let self = self else { return }
                             UIApplication.shared.registerForRemoteNotifications()
+                            self.onAuthorizationStatusUpdate?()
                         }
                     }
                 }
@@ -39,8 +46,10 @@ class PushService {
     }
 
     func updateToken(_ data: Data?) {
-        token = data
-        guard let deviceToken = data else { return }
-        print("Registered for Push - Token: \(deviceToken.tokenToString)")
+        print("Registered for Push - Token: \(data?.tokenToString ?? "")")
+
+        UserDefaults.standard.set(data, forKey: "push_token")
+        UserDefaults.standard.synchronize()
+        onTokenUpdate?(token)
     }
 }
