@@ -39,7 +39,7 @@ class VoIPService: NSObject, PKPushRegistryDelegate, CXProviderDelegate {
     // MARK: PKPushRegistryDelegate
 
     func pushRegistry(_ registry: PKPushRegistry, didUpdate pushCredentials: PKPushCredentials, for type: PKPushType) {
-        print("VoIP token updated: \(pushCredentials.tokenToString)")
+        print("VoIP token: \(pushCredentials.tokenToString)")
         onTokenUpdate?(token)
     }
 

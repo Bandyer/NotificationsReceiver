@@ -21,6 +21,11 @@ class PushService {
 
     private init() {}
 
+    func start() {
+        guard let token = self.token else { return }
+        print("Push Token: \(token.tokenToString)")
+    }
+
     func getAuthorizationStatus(completion: @escaping (UNAuthorizationStatus) -> Void) {
         center.getNotificationSettings { settings in
             completion(settings.authorizationStatus)
@@ -46,7 +51,7 @@ class PushService {
     }
 
     func updateToken(_ data: Data?) {
-        print("Registered for Push - Token: \(data?.tokenToString ?? "")")
+        print("Push Token: \(data?.tokenToString ?? "")")
 
         UserDefaults.standard.set(data, forKey: "push_token")
         UserDefaults.standard.synchronize()
