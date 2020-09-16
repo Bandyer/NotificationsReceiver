@@ -23,7 +23,7 @@ class PushService {
 
     func start() {
         guard let token = self.token else { return }
-        print("Push Token: \(token.tokenToString)")
+        print("Push Token: \(token.asTokenString)")
     }
 
     func getAuthorizationStatus(completion: @escaping (UNAuthorizationStatus) -> Void) {
@@ -51,7 +51,7 @@ class PushService {
     }
 
     func updateToken(_ data: Data?) {
-        print("Push Token: \(data?.tokenToString ?? "")")
+        print("Push Token: \(data?.asTokenString ?? "")")
 
         UserDefaults.standard.set(data, forKey: "push_token")
         UserDefaults.standard.synchronize()

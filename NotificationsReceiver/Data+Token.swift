@@ -3,18 +3,10 @@
 //
 
 import Foundation
-import PushKit
-
-extension PKPushCredentials {
-
-    var tokenToString: String {
-        token.tokenToString
-    }
-}
 
 extension Data {
 
-    var tokenToString: String {
+    var asTokenString: String {
         map {
             String(format: "%02.2hhx", $0)
         }.joined()

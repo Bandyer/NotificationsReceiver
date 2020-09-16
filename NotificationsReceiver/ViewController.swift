@@ -55,32 +55,15 @@ class ViewController: UIViewController {
     }
 
     private func updateVoipTokenField(token: Data?) {
-        voipTextView.text = token?.tokenToString ?? "N/A"
+        voipTextView.text = token?.asTokenString ?? "N/A"
     }
 
     private func updatePushTokenField(token: Data?) {
-        pushTextView.text = token?.tokenToString ?? "N/A"
+        pushTextView.text = token?.asTokenString ?? "N/A"
     }
 
     private func updatePushAuthLabel(status: UNAuthorizationStatus) {
         pushAuthLabel.text = String(describing: status)
-    }
-
-}
-
-extension UNAuthorizationStatus: CustomStringConvertible {
-
-    public var description: String {
-        switch self {
-            case .notDetermined:
-                return "not determined"
-            case .denied:
-                return "denied"
-            case .authorized:
-                return "authorized"
-            case .provisional:
-                return "provisional"
-        }
     }
 
 }
