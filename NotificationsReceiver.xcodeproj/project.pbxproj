@@ -12,6 +12,9 @@
 		A9407A2825120AC8001F4DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9407A2625120AC8001F4DEE /* Main.storyboard */; };
 		A9407A2A25120AC9001F4DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9407A2925120AC9001F4DEE /* Assets.xcassets */; };
 		A9407A2D25120AC9001F4DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9407A2B25120AC9001F4DEE /* LaunchScreen.storyboard */; };
+		A9407A4125121E1D001F4DEE /* TokenExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407A4025121E1D001F4DEE /* TokenExtensions.swift */; };
+		A9407A4325121FCD001F4DEE /* PushService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407A4225121FCD001F4DEE /* PushService.swift */; };
+		A9407A452512205D001F4DEE /* VoIPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9407A442512205D001F4DEE /* VoIPService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		A9407A2925120AC9001F4DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9407A2C25120AC9001F4DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9407A2E25120AC9001F4DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9407A4025121E1D001F4DEE /* TokenExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenExtensions.swift; sourceTree = "<group>"; };
+		A9407A4225121FCD001F4DEE /* PushService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushService.swift; sourceTree = "<group>"; };
+		A9407A442512205D001F4DEE /* VoIPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoIPService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				A9407A2925120AC9001F4DEE /* Assets.xcassets */,
 				A9407A2B25120AC9001F4DEE /* LaunchScreen.storyboard */,
 				A9407A2E25120AC9001F4DEE /* Info.plist */,
+				A9407A4025121E1D001F4DEE /* TokenExtensions.swift */,
+				A9407A4225121FCD001F4DEE /* PushService.swift */,
+				A9407A442512205D001F4DEE /* VoIPService.swift */,
 			);
 			path = NotificationsReceiver;
 			sourceTree = "<group>";
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9407A452512205D001F4DEE /* VoIPService.swift in Sources */,
 				A9407A2525120AC8001F4DEE /* ViewController.swift in Sources */,
+				A9407A4325121FCD001F4DEE /* PushService.swift in Sources */,
 				A9407A2125120AC8001F4DEE /* AppDelegate.swift in Sources */,
+				A9407A4125121E1D001F4DEE /* TokenExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
