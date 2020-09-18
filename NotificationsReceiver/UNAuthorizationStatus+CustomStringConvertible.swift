@@ -17,6 +17,10 @@ extension UNAuthorizationStatus: CustomStringConvertible {
                 return "authorized"
             case .provisional:
                 return "provisional"
+            #if swift(>=5.3)
+            case .ephemeral:
+                return "ephemeral"
+            #endif
         }
     }
 }
